@@ -32,3 +32,11 @@ img {
         transform: rotate(360deg);
     }
 }
+
+.swiper-pagination-bullet-active {
+    background-color: blueviolet !important;
+}
+
+.page-item {
+    cursor: pointer;
+}

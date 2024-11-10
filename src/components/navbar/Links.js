@@ -8,18 +8,12 @@ const links = [
     },
     {
         id: 2,
-        text: 'Link',
-        href: '/admin'
-
-    },
-    {
-        id: 3,
         text: 'Login',
         href: '/auth/login'
 
     },
     {
-        id: 4,
+        id: 3,
         text: 'cart',
         href: '/cart'
 

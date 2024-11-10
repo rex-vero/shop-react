@@ -1,5 +1,4 @@
 import MainContent from './maincontent/MainContent';
-import Main from './pages/Main';
 import MainLayout from './layouts/MainLayout';
 import Login from './pages/Login';
 import AuthLayout from './layouts/AuthLayout';
@@ -11,9 +10,8 @@ import Cart from './pages/Cart';
 export const routs = [
     {
         path: '/', element: <MainLayout />, children: [
-            { path: '/', element: <Main /> },
-            { path: '/admin', element: <MainContent />, loader: async () => fetchData(null, '/products') },
-            { path: '/admin/:id', element: <Single />, loader: async ({ params }) => await fetchData(params, '/products') },
+            { path: '/', element: <MainContent />, loader: async () => fetchData(null, '/products') },
+            { path: '/:id', element: <Single />, loader: async ({ params }) => await fetchData(params, '/products') },
             { path: '/cart', element: <Cart /> }
         ]
     },

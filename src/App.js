@@ -10,8 +10,6 @@ import SearchItems from './components/navbar/SearchItems';
 import { BrowserRouter, createBrowserRouter, Route, RouterProvider, Routes } from 'react-router-dom';
 import { routs } from './routs';
 import Single from './pages/Single';
-
-
 import NotFound from './pages/NotFound';
 
 const App = () => {

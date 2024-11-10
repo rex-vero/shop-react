@@ -6,7 +6,7 @@ const CartItem = ({ item }) => {
             <div className="card mb-3">
                 <div className="row g-0 align-items-center">
                     <div className="col-md-4">
-                        <img src={item.image} className="img-fluid rounded-start" alt="..." />
+                        <img src={item.images[0]} className="img-fluid rounded-start" alt="..." />
                     </div>
                     <div className="col-md-8">
                         <div className="card-body">

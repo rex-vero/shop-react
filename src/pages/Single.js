@@ -1,4 +1,7 @@
 import { useLoaderData } from "react-router-dom";
+import ProductSlider from "../maincontent/ProductSlider";
+import { ToastContainer } from "react-toastify";
+
 
 const Single = () => {
     const data = useLoaderData();
@@ -8,10 +11,10 @@ const Single = () => {
             <div className="d-flex flex-column justify-content-center align-items-center">
                 {data &&
                     <>
-                        <div className="col">
-                            <img className="img" alt={data.title} src={data.image} />
+                        <div className="col-4">
+                            <ProductSlider item={data} page='s' />
                         </div>
-                        <div className="col">
+                        <div className="col-6">
                             <h1 className="text-center">{data.title}</h1>
                         </div>
                     </>

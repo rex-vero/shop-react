@@ -1,4 +1,5 @@
 import { createContext, useState } from "react";
+import { toast } from "react-toastify";
 
 const DataContext = createContext(null);
 export const DataProvider = ({ children }) => {
@@ -18,6 +19,7 @@ export const DataProvider = ({ children }) => {
             setCart(temp);
             localStorage.setItem('cart', JSON.stringify(temp));
         }
+        toast.success(`${item.title} added`)
     }
 
     const handleRemove = (item) => {
